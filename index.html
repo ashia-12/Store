@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Store</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="t.css" />
+  </head>
+  <body>
+    <!-- main page -->
+    <section class="mainPage">
+
+      <!-- logo -->
+      <div class="pagelogo">Logo</div>
+      <!-- logo end -->
+
+      <!-- left section -->
+      <div class="leftSection">
+          <div  class="gender">
+              <div class="men genderSelecter selected" data-genderSelect="men" >Men</div>
+              <div class="women genderSelecter" data-genderSelect="women">Women</div>
+          </div>
+          <label for="catagory" class="catagoryLabel">Select Catagory</label>
+        <select name="catagory" id="catagory">
+          <option value="shirt">Shirt</option>
+          <option value="tshirt">T-shirt</option>
+          <option value="jeans" selected>Jeans</option>
+        </select>
+        <ul class="contactSection">
+         <a href="index.html#main-page-contactForm"><li>contact</li></a>
+          <li id="newsletterDisplay">newsletter</li>
+         <a href="index.html#subscribe-section"><li>subscribe</li></a>
+        </ul>
+        <div class="toggleWrap">
+          <p>Dark Mode</p>
+          <div class="toggleOuterSide">
+            <div class="toggleInnerSide"></div>
+          </div>
+        </div>
+      </div>
+      <!-- left section end -->
+
+      <!-- right section -->
+      <div class="rightSection">
+
+        <!-- nav bar -->
+        <nav class="navbarWrapper">
+          <a href="#" class="selectedCatagoryTitle">Jeans</a>
+          <a href="#" class="shoppingCartLogo"
+            ><i class="fa-solid fa-cart-shopping"></i
+          ></a>
+          <a href="#" class="searchItemsLogo"
+            ><i class="fa-solid fa-magnifying-glass" id="searchButton"></i
+          ></a>
+        </nav>
+        <!-- nav bar end -->
+
+        <!-- searchBox -->
+           <input type="text" placeholder="Search Here" class="searchBox">
+           <i class="fa-regular fa-x" id="searchBoxHide"></i>
+        <!-- searchbox end -->
+
+        <!-- banner -->
+        <div class="banner">
+          <img src="img/banner/dafault banner.jpg" alt="This Is An Image" />
+          
+          <div class="bannerContentWrap">
+            <h1>New arrivals</h1>
+            <h3>collections <span id="curentYear">2016</span></h3>
+            <a href="index.html#ItemCount"><button class="shopNow">Shop Now</button></a>
+            <i class="fa-solid fa-arrow-left" id="leftBannerSlide"></i>
+            <i class="fa-solid fa-arrow-right" id="RightBannerSlide"></i>
+          </div>
+        </div>
+        <!-- banner End -->
+
+        <!-- item count -->
+        <p class="ItemCount"  id="ItemCount">8 Items</p>
+        <!-- item count end -->
+
+        <!-- product Section -->
+        <div class="productSectionWrap">
+          <div class="product" data-selectedindex="0" data-selectedtype="jeans" data-selectedgender="men" data-selectedcolor="blue">
+            <img src="img/men/blue/jeans/jeans1.jpg" alt="This Is An Image" />
+            <p class="productname">skinny Jeans</p>
+            <span class="dollerProduct">$<b class="productPrice"></b></span>
+          </div>
+          <div class="product" data-selectedindex="1" data-selectedtype="jeans" data-selectedgender="men"  data-selectedcolor="red">
+            <img src="img/men/red/jeans/jeans2.jpeg" alt="This Is An Image" />
+            <p class="productname">skinny Jeans</p>
+            <span class="dollerProduct">$<b class="productPrice"></b></span>
+          </div>
+          <div class="product" data-selectedindex="2" data-selectedtype="jeans" data-selectedgender="men"  data-selectedcolor="green">
+            <img src="img/men/green/jeans/jeans3.jpg" alt="This Is An Image" />
+            <p class="productname">skinny Jeans</p>
+            <span class="dollerProduct">$<b class="productPrice"></b></span>
+          </div>
+          <div class="product" data-selectedindex="3" data-selectedtype="jeans" data-selectedgender="men"  data-selectedcolor="red">
+            <img src="img/men/red/jeans/jeans4.jpg" alt="This Is An Image" />
+            <p class="productname">skinny Jeans</p>
+            <span class="dollerProduct">$<b class="productPrice"></b></span>
+          </div>
+          <div class="product" data-selectedindex="4" data-selectedtype="jeans" data-selectedgender="men"  data-selectedcolor="blue">
+            <img src="img/men/blue/jeans/jeans5.jpg" alt="This Is An Image" />
+            <p class="productname">skinny Jeans</p>
+            <span class="dollerProduct">$<b class="productPrice"></b></span>
+          </div>
+          <div class="product" data-selectedindex="5" data-selectedtype="jeans" data-selectedgender="men"  data-selectedcolor="blue">
+            <img src="img/men/blue/jeans/jeans6.jpeg" alt="This Is An Image" />
+            <p class="productname">skinny Jeans</p>
+            <span class="dollerProduct">$<b class="productPrice"></b></span>
+          </div>
+          <div class="product" data-selectedindex="6" data-selectedtype="jeans" data-selectedgender="men"  data-selectedcolor="green">
+            <img src="img/men/green/jeans/jeans7.jpeg" alt="This Is An Image" />
+            <p class="productname">skinny Jeans</p>
+            <span class="dollerProduct">$<b class="productPrice"></b></span>
+          </div>
+          <div class="product" data-selectedindex="7" data-selectedtype="jeans" data-selectedgender="men"  data-selectedcolor="blue">
+            <img src="img/men/blue/jeans/jeans8.jpg" alt="This Is An Image" />
+            <p class="productname">skinny Jeans</p>
+            <span class="dollerProduct">$<b class="productPrice"></b></span>
+          </div>
+        </div>
+        <!-- product Section End -->
+
+      </div>
+      <!-- right section end -->
+
+      <!-- subscribe section -->
+      <div class="subscribe-section" id="subscribe-section">
+        <h1>Subscribe</h1>
+        <h3>To get special offers and VIP treatment:</h3>
+        <input type="text" placeholder="Enter e-mail">
+        <button>Subscribe</button>
+      </div>
+      <!-- subscribe section end -->
+
+      <!-- main Page Footer -->
+      <footer class="mainPageFooter">
+        <form action="#" class="main-page-contactForm" id="main-page-contactForm">
+          <p class="contactTitle">Contact</p>
+          <p>Questions? Go ahead.</p>
+          <input type="text" placeholder="Name" class="main-page-contactForm-input"/>
+          <input type="email" placeholder="E-mail" class="main-page-contactForm-input" />
+          <textarea name="textarea" id="msg-box" cols="30" rows="5"></textarea>
+          <button type="submit" class="main-page-contactForm-button">Send</button>
+        </form>
+        <ul class="main-page-aboutUs">
+          <p>About</p>
+          <li>about us</li>
+          <li>we are hiring</li>
+          <li>support</li>
+          <li>find store</li>
+          <li>shipment</li>
+          <li>payment</li>
+          <li>giftcard</li>
+          <li>return</li>
+          <li>help</li>
+        </ul>
+        <ul class="main-page-store">
+          <p>Store</p>
+          <li><i class="fa-solid fa-location-dot"></i>Company Name</li>
+          <li><i class="fa-solid fa-phone"></i>0044123123</li>
+          <li><i class="fa-solid fa-envelope"></i>E-mail</li>
+        </ul>
+        <ul class="main-page-weAccept">
+          <p>We Accept</p>
+          <li><i class="fa-brands fa-cc-amex"></i>Amex</li>
+          <li><i class="fa-brands fa-cc-mastercard"></i></i>Master Card</li>
+          <li><i class="fa-brands fa-cc-visa"></i>Visa</li>
+        </ul>
+        <ul class="social-media-links">
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+          <li><i class="fa-brands fa-snapchat"></i></li>
+          <li><i class="fa-brands fa-pinterest"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-linkedin"></i></li>
+        </ul>
+        <div class="copyright">
+           &#169 Code By Souvik
+        </div>
+      </footer>
+      <!-- main Page Footer End -->
+
+      <!-- shopping cart -->
+      <div class="shoppingCartWrap">
+        <!-- cart heading -->
+        <div class="shoppingCart">
+          <h1 class="cartHeading">Shopping Cart</h1>
+          <i class="fa-regular fa-x  cartClose"></i>
+          <!-- default item -->
+          <span class="cartDefaultText"><i class="fa-solid fa-cart-shopping"></i>No Product in The Busket</span>
+          <!-- end default -->
+          <!--  -->
+           <!-- cart items -->
+      <div class="cartproductWrap">
+          <!-- subtotal & checkout -->
+            <div class="subtotalCheckout">
+               <div class="subtotal">
+                 <span >Subtotal: <span id="dollerSub">$</span><b class="subtotalPrice"></b> </span>
+               </div>
+               <button class="checkout">Checkout</button>
+            </div>
+          <!-- subtotal & checkout end -->
+
+      </div>
+      <!-- end cart items -->
+          <!--  -->
+        </div>
+        <!-- end cart heading -->
+      </div>
+      <!-- Shopping cart end -->
+
+      <!-- newsLetter -->
+      <div class="newslettreWrap">
+      <div class="newsletter-section">
+        <h1>Newsletter</h1>
+        <i class="fa-regular fa-x  newsletterClose"></i>
+        <h3>Join our mailing list to receive updates on new arrivals and special offers.</h3>
+        <input id="newsletterinput" type="text" placeholder="Enter e-mail">
+        <button>Subscribe</button>
+      </div>
+    </div>
+      <!-- newsletter End -->
+
+      <!-- product page popup-->
+    <section class="productPageWrap">
+      <div class="productPage">
+        <div class="productImage">
+          <img src="#" alt="product Image" height="250px">
+        </div>
+        <div>
+        <div class="productDetailsWrap">
+          <p class="productTitle"></p>
+          <p class="productprice">Price: $<b id="productprice"></b></p>
+        </div>
+        <div class="productColor">
+          <h1>color:</h1>
+         <div class="colorSelector color1" data-refcolor="red"></div>
+         <div class="colorSelector color2" data-refcolor="blue"></div>
+         <div class="colorSelector color3" data-refcolor="green"></div>
+         <input type="hidden" id="selectedProductColor" value="">
+        </div>
+        <div class="productSize">
+          <select name="size" id="size">
+            <option value="xs">xs</option>
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+          </select>
+            <input type="number" min="1" class="productQuantity" placeholder="Select quantity" value="1" >
+         </div>
+         
+           <div class="ratingsWrap">
+             <span class="ratingsTitle">your ratings:</span> 
+             <div class="ratings">
+               <i class="fa-solid fa-star s1"></i>
+               <i class="fa-solid fa-star s2"></i>
+               <i class="fa-solid fa-star s3"></i>
+               <i class="fa-solid fa-star s4"></i>
+               <i class="fa-solid fa-star s5"></i>
+            </div>
+           </div>
+         
+         <button class="addToCart">AddToCart</button>
+         <i class="fa-regular fa-x  productPageClose"></i>
+        </div> 
+    </div>
+      </section>
+      <!-- product page popup end -->
+
+    </section>
+    <!-- main page end -->
+    <script src="t.js"></script>
+  </body>
+</html>
